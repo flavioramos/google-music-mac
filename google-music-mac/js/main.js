@@ -12,6 +12,10 @@
 
 // This check ensures that, even though this script is run multiple times, our code is only attached once.
 if (typeof window.MusicAPI === 'undefined') {
+    
+    // disable user selection
+    document.documentElement.style.webkitUserSelect = 'none';
+    
     window.MusicAPI = {};
 
     /* Create a volume API. */
